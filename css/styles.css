@@ -266,7 +266,7 @@ a {
 /* модальне вікно */
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -345,8 +345,13 @@ a {
   margin-bottom: 10px;
 }
 
+.order-form-field:last-child {
+  margin-bottom: 0;
+}
+
 .order-form-label {
   display: block;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -996,16 +1001,13 @@ address {
 }
 
 .signing-box {
-  position: relative;
-  display: flex;
   margin-left: 93px;
-  flex-direction: column;
-  width: 570px;
-  height: 86px;
 }
 
-.signing-form-field {
-  position: relative;
+.signing-form {
+  display: flex;
+  width: 570px;
+  gap: 12px;
 }
 
 .signing-form-title {
@@ -1035,14 +1037,7 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .signing-form-input:hover,
-.signing-form-input:focus {
-  border-color: var(--accent-color);
-  cursor: pointer;
-} */
-
 .signing-form-btn {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
